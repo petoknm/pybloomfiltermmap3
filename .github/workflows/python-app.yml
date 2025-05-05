@@ -11,19 +11,28 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Python 3.12
       uses: actions/setup-python@v2
       with:
         python-version: 3.12
-    - name: Install dependencies
+
+    - name: Install build system
       run: |
-        pip install cython setuptools
-        python setup.py develop
+        pip install build
+
+    - name: Build the package
+      run: |
+        python -m build
+
+    - name: Install the package
+      run: |
+        pip install dist/*.whl
+
     - name: Run Tests
       run: |
-        python setup.py test
+        python -m unittest discover -s tests -p "*.py"
