@@ -1,6 +1,8 @@
-include CHANGELOG
 include LICENSE
 include AUTHORS
 include README.md
-recursive-include src *
-recursive-include tests *
+include setup.py
+include setup.cfg
+include pyproject.toml
+recursive-include src *.c *.h *.pyx *.pxd
+recursive-include tests *.py

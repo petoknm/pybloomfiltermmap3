@@ -110,17 +110,18 @@ pip install cython
 ### Build
 
 ```bash
-python setup.py develop
+python -m build
 ```
 
 ### Test
 
 ```bash
-python setup.py test
+python -m unittest discover -s tests -p "*.py"
 ```
 
 ## Maintainers
 
+- [David Stromberger](https://github.com/cavoq)
 - [Prashant Sinha](https://github.com/prashnts)
 - [Vytautas Mizgiris](https://github.com/vmizg)
 
