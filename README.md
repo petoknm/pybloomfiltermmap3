@@ -119,6 +119,13 @@ python -m build
 python -m unittest discover -s tests -p "*.py"
 ```
 
+### Publish
+
+```bash
+python -m pip install --upgrade twine
+python -m twine upload dist/*
+```
+
 ## Maintainers
 
 - [David Stromberger](https://github.com/cavoq)
