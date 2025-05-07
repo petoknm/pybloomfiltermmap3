@@ -7,8 +7,8 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pybloomfiltermmap3"
-version = "0.6.0"
+name = "pybloomfilter3"
+version = "0.7.0"
 description = "A fast implementation of Bloom filter for Python 3 built on mmap"
 readme = "README.md"
 authors = [
