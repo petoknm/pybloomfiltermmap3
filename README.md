@@ -69,10 +69,6 @@ pip install pybloomfilter3
 
 and you should be set.
 
-### Note to Python 2 to < 3.5 users
-
-This library is specifically meant for Python 3.5 and above. [As of 2020](https://www.python.org/doc/sunset-python-2/), we strongly advise you to switch to an actively maintained distribution of Python 3. If for any reason your current environment is restricted to Python 2, please see [pybloomfiltermmap](https://github.com/axiak/pybloomfiltermmap). Please note that the latter is not actively maintained and will lack bug fixes and new features.
-
 ## History and Future
 
 [pybloomfiltermmap](https://github.com/axiak/pybloomfiltermmap) is an excellent Bloom filter implementation for Python 2 by [@axiak](https://github.com/axiak) and contributors. I, [@prashnts](https://github.com/prashnts), made initial changes to add support for Python 3 sometime in 2016 as the current [pybloomfiltermmap3](https://pypi.org/project/pybloomfiltermmap3/) on `PyPI`. Since then, with the help of contributors, there have been incremental improvements and bug fixes while maintaining the API from versions `0.4.x` and below.
