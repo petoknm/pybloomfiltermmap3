@@ -1,16 +1,15 @@
-# pybloomfiltermmap3
+# pybloomfilter3
 
-[pybloomfiltermmap3](https://github.com/prashnts/pybloomfiltermmap3) is a Python 3 compatible fork of [pybloomfiltermmap](https://github.com/axiak/pybloomfiltermmap) by [@axiak](https://github.com/axiak).
+[pybloomfilter3](https://github.com/cavoq/pybloomfiltermmap3) is a maintained fork of [pybloomfiltermmap3](https://github.com/prashnts/pybloomfiltermmap3) by [@prashnts](https://github.com/prashnts).
 
-The goal of `pybloomfiltermmap3` is simple: to provide a fast, simple, scalable, correct library for Bloom filters in Python.
+The goal of `pybloomfilter3` is simple: to provide a fast, simple, scalable, correct library for Bloom filters in Python.
 
-[![Build Status](https://travis-ci.org/PrashntS/pybloomfiltermmap3.svg?branch=master)](https://travis-ci.org/PrashntS/pybloomfiltermmap3)
-[![Documentation Status](https://readthedocs.org/projects/pybloomfiltermmap3/badge/?version=latest)](https://pybloomfiltermmap3.readthedocs.io/en/latest/?badge=latest)
-[![PyPI](https://img.shields.io/pypi/v/pybloomfiltermmap3.svg)](https://pypi.python.org/pypi/pybloomfiltermmap3)
-[![PyPI](https://img.shields.io/pypi/dw/pybloomfiltermmap3.svg)](https://pypi.python.org/pypi/pybloomfiltermmap3)
-[![PyPI](https://img.shields.io/pypi/pyversions/pybloomfiltermmap3.svg)](https://pypi.python.org/pypi/pybloomfiltermmap3)
+[![Build Status](https://travis-ci.org/cavoq/pybloomfiltermmap3.svg?branch=master)](https://travis-ci.org/cavoq/pybloomfiltermmap3)
+[![PyPI](https://img.shields.io/pypi/v/pybloomfilter3.svg)](https://pypi.python.org/pypi/pybloomfilter3)
+[![PyPI](https://img.shields.io/pypi/dw/pybloomfilter3.svg)](https://pypi.python.org/pypi/pybloomfilter3)
+[![PyPI](https://img.shields.io/pypi/pyversions/pybloomfilter3.svg)](https://pypi.python.org/pypi/pybloomfilter3)
 
-## Why pybloomfiltermmap3?
+## Why pybloomfilter3?
 
 There are a couple reasons to use this module:
 
@@ -65,7 +64,7 @@ Current docs are available at [pybloomfiltermmap3.rtfd.io](https://pybloomfilter
 To install:
 
 ```bash
-pip install pybloomfiltermmap3
+pip install pybloomfilter3
 ```
 
 and you should be set.
@@ -77,6 +76,7 @@ This library is specifically meant for Python 3.5 and above. [As of 2020](https:
 ## History and Future
 
 [pybloomfiltermmap](https://github.com/axiak/pybloomfiltermmap) is an excellent Bloom filter implementation for Python 2 by [@axiak](https://github.com/axiak) and contributors. I, [@prashnts](https://github.com/prashnts), made initial changes to add support for Python 3 sometime in 2016 as the current [pybloomfiltermmap3](https://pypi.org/project/pybloomfiltermmap3/) on `PyPI`. Since then, with the help of contributors, there have been incremental improvements and bug fixes while maintaining the API from versions `0.4.x` and below.
+[@cavoq](https://github.com/cavoq) forked pybloomfiltermmap3 in 2025 to continue development and maintenance of the library to ensure it remains compatible with the latest Python versions ([pybloomfilter3](https://pypi.org/project/pybloomfiltermmap3/) on `PyPI`).
 
 Some new features and changes were first introduced in version `0.5.0`. From this point on, the goal is to reach stability, as well as add a few more APIs to expand upon the use cases. While we can't guarantee that we won't change the current interface, the transition from versions `0.4.x` and below should be quick one liners. Please open an issue if we broke your build!
 
@@ -90,14 +90,11 @@ Package installation depends on a generated `pybloomfilter.c` file, which requir
 ### Environment setup
 
 ```bash
-# Installs the venv and python3-dev packages
-sudo apt install python3.10-venv python3-dev
-
 # Creates a virtual env called "env"
 python -m venv env
 
 # Activates the created virtual env
-source ./env/bin/activate
+source env/bin/activate
 ```
 
 ### Dependencies
@@ -123,7 +120,7 @@ python -m unittest discover -s tests -p "*.py"
 
 ```bash
 python -m pip install --upgrade twine
-python -m twine upload dist/*
+python -m twine upload dist/*.tar.gz
 ```
 
 ## Maintainers
