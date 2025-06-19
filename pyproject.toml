@@ -15,7 +15,7 @@ authors = [
     {name = "Prashant Sinha", email = "prashant@noop.pw"},
     {name = "David Stromberger", email = "cavoq@proton.me"}
 ]
-license = {text = "MIT"}
+license = "MIT"
 requires-python = ">=3.9, <4"
 classifiers = [
     "Development Status :: 4 - Beta",
