@@ -8,7 +8,7 @@
 
 #include "bloomfilter.h"
 
-BloomFilter *bloomfilter_Create_Malloc(size_t max_num_elem, double error_rate,
+inline BloomFilter *bloomfilter_Create_Malloc(size_t max_num_elem, double error_rate,
                                 BTYPE num_bits, int *hash_seeds, int num_hashes, const char *data)
 {
     BloomFilter * bf = (BloomFilter *)malloc(sizeof(BloomFilter));
